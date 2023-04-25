@@ -2,6 +2,7 @@ package com.example.springnewboot.service;
 
 import com.example.springnewboot.model.User;
 import com.example.springnewboot.repository.UserRepository;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,6 +14,7 @@ import java.util.List;
 public class UserServiceImp implements UserService {
 
     private UserRepository userRepository;
+
 
     public UserServiceImp(UserRepository userRepository) {
         this.userRepository = userRepository;

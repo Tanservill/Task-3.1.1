@@ -2,6 +2,7 @@ package com.example.springnewboot.repository;
 
 import com.example.springnewboot.model.User;
 import jakarta.persistence.EntityManager;
+
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 @Repository
 public class UserRepositoryImp implements UserRepository {
     private EntityManager entityManager;
+
 
     public UserRepositoryImp(EntityManager entityManager) {
         this.entityManager = entityManager;

@@ -2,6 +2,7 @@ package com.example.springnewboot.controller;
 
 import com.example.springnewboot.model.User;
 import com.example.springnewboot.service.UserService;
+
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -11,9 +12,11 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     private UserService userService;
 
+
     public UserController(UserService userService) {
         this.userService = userService;
     }
+
     @GetMapping(value = "users")
     public String allUsers(ModelMap model) {
         model.addAttribute("users", userService.getAllUsers());
