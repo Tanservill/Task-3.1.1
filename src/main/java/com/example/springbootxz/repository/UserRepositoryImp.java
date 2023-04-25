@@ -2,14 +2,16 @@ package com.example.springbootxz.repository;
 
 import com.example.springbootxz.model.User;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
 
 @Repository
 public class UserRepositoryImp implements UserRepository {
 
-
+    @PersistenceContext
     private EntityManager entityManager;
 
     protected EntityManager getEntityManager() {

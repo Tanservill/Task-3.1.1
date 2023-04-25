@@ -14,7 +14,7 @@ public class UserServiceImp implements UserService {
 
     private UserRepository userRepository;
 
-    public void setUserDao(UserRepository userRepository) {
+    public UserServiceImp(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
